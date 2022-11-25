@@ -2,7 +2,9 @@
 
 created: 2022-11-16 13:26
 
-This CheatSheet contains all the necessary git commands I use on a daily or semi daily basis. I know there are multiple cheat sheets present on the internet for git (_one of them present in pdfs folder_) but its always a good idea to make your own versions.
+"_It is easy to shoot your foot off with git, but also easy to revert to a previous foot and merge it with your current leg._" **—Jack William Bell**
+
+This CheatSheet contains all the necessary git commands I use on a daily or semi daily basis. I know there are multiple cheat sheets present on the internet for git (_one of them present in pdfs folder_) but it's always a good idea to make your own versions. Feel free to use this cheat sheet as a reference.
 
 ## Basic Commands
 
@@ -15,3 +17,83 @@ cd {path_to_directory}
 git init
 ```
 
+- Cloning a repository
+
+```
+cd {path_to_directory}
+git clone {url}
+```
+
+- Git Status
+
+Shows all the modifications/changes made in the local repository which are yet to be committed.
+
+```
+git status
+```
+
+- Staging commits
+
+This is a intermediate step before committing to a particular change. It allows you to commit only specific changes, or given the changes different commits with different messages. You can stage all changes at once using **"."** .
+
+```
+git add {file_name}
+git add . 
+```
+
+- Committing changes
+
+This is the main step that finalises the changes you made. Its literally committing to your file changes. You can skip the staging step by using **"-a"** to directly commit all the modifications.
+
+```
+git commit -a
+git commit -m "message"
+```
+
+-  Git Show
+
+Shows the changes committed in detail before pushing them to the local repo. Its output is similar to git log. The difference is by default git show shows details of most recent commit (HEAD). Git log on its own will show all commits made.
+
+```
+git show
+git show {hash_of_commit}
+```
+
+- Git Remote
+
+We need to connect our local repo to remote for the world to see. You can view and add remotes to your local repository using these commands. Note that we typically name the remote "origin" because as the name suggests, it refers to the original remote repo.
+
+```
+git remote add {name} "url"
+git remote -v
+git remote rm {name}
+```
+
+- Git Branch
+
+We also need to select a branch to where we want to push our changes. When creating a file for the first time we need to create a new branch.
+
+```
+git branch [new_branch_name]
+```
+
+But this alone doesn't automatically make us use the newly created branch. To use the branch use the **checkout** command.
+
+```
+git checkout [new_branch_name]
+git checkout [new_branch_name] [existing_branch]
+```
+
+To list branches:
+
+```
+git branch
+```
+
+To delete a branch:
+
+```
+git branch -d [branch_name]
+```
+
+Oof that was a lot. Branches are super useful but can be hard to organise. Thats why i would highly recommend using git branch visualisers, there are a lot of them!
