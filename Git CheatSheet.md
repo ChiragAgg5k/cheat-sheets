@@ -10,21 +10,21 @@ This CheatSheet contains all the necessary git commands I use on a daily or semi
 
 These are the basic commands every programmer should learn by heart.
 
-- Initializing a repository
+### Initializing a repository
 
 ```
 cd {path_to_directory}
 git init
 ```
 
-- Cloning a repository
+### Cloning a repository
 
 ```
 cd {path_to_directory}
 git clone {url}
 ```
 
-- Git Status
+### Git Status
 
 Shows all the modifications/changes made in the local repository which are yet to be committed.
 
@@ -32,7 +32,7 @@ Shows all the modifications/changes made in the local repository which are yet t
 git status
 ```
 
-- Staging commits
+### Staging commits
 
 This is a intermediate step before committing to a particular change. It allows you to commit only specific changes, or given the changes different commits with different messages. You can stage all changes at once using **"."** .
 
@@ -41,16 +41,16 @@ git add {file_name}
 git add . 
 ```
 
-- Committing changes
+### Committing changes
 
-This is the main step that finalises the changes you made. Its literally committing to your file changes. You can skip the staging step by using **"-a"** to directly commit all the modifications.
+This is the main step that finalizes the changes you made. Its literally committing to your file changes. You can skip the staging step by using **"-a"** to directly commit all the modifications.
 
 ```
 git commit -a
 git commit -m "message"
 ```
 
--  Git Show
+### Git Show
 
 Shows the changes committed in detail before pushing them to the local repo. Its output is similar to git log. The difference is by default git show shows details of most recent commit (HEAD). Git log on its own will show all commits made.
 
@@ -59,7 +59,7 @@ git show
 git show {hash_of_commit}
 ```
 
-- Git Remote
+### Git Remote
 
 We need to connect our local repo to remote for the world to see. You can view and add remotes to your local repository using these commands. Note that we typically name the remote "origin" because as the name suggests, it refers to the original remote repo.
 
@@ -69,7 +69,9 @@ git remote -v
 git remote rm {name}
 ```
 
-- Git Branch
+Here the "url" is the SSH key your remote repo manager will provide (which in 99.99999% cases is **Github**)
+
+### Git Branch
 
 We also need to select a branch to where we want to push our changes. When creating a file for the first time we need to create a new branch.
 
@@ -96,4 +98,16 @@ To delete a branch:
 git branch -d [branch_name]
 ```
 
-Oof that was a lot. Branches are super useful but can be hard to organise. Thats why i would highly recommend using git branch visualisers, there are a lot of them!
+Oof that was a lot. Branches are super useful but can be hard to organize. Thats why i would highly recommend using git branch visualizers, there are a lot of them!
+
+### Git Push
+
+Now that we have selected our remote repo, and a branch, we can finally push are committed changes.
+
+```
+git push -u {remote name} {branch name}
+```
+
+Now here **"-u"** is used to set upstream on the branch. What is upstream you ask? GOOD QUESTION. Its basically important if you want someone to pull your repo, otherwise it gives error or something. Just use it, don't ask questions.
+
+
