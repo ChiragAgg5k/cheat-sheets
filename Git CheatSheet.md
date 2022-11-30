@@ -110,4 +110,16 @@ git push -u {remote name} {branch name}
 
 Now here **"-u"** is used to set upstream on the branch. What is upstream you ask? GOOD QUESTION. Its basically important if you want someone to pull your repo, otherwise it gives error or something. Just use it, don't ask questions.
 
+## Non Basic Commands
+
+The rest of these commands need not be learned by heart, but once you become experienced enough, you will learn them automatically.
+
+### Git Log
+
+This command's life has been taken by many git history visualizers. Still the OG's rely on it.
+
+```
+git log
+```
+
 
