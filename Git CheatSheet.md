@@ -116,7 +116,7 @@ The rest of these commands need not be learned by heart, but once you become exp
 
 ### Git Log
 
-This command's life has been taken by many git history visualizers. Still the OG's rely on it.
+This command's life has been taken by many git history visualizers. Still the OGs rely on it. It shows a list of past commits along with their commit ids, which can then be used to show each commit in detail.
 
 ```
 git log
