@@ -140,3 +140,57 @@ Some text to show that the reference links can follow later.
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
+
+# Images
+
+You can use the same syntax as links, but add an exclamation mark in front of the brackets. Also you can use HTML img tag , which allows you to set the image size.
+
+```
+![Image](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="git logo" width="300">
+```
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="git logo" width="300">
+
+# Code and Syntax Highlighting
+
+Use three backticks for a fenced code block:
+
+```
+function test() {
+ console.log("look ma’, no spaces");
+}
+```
+
+Adding language identifier to enable syntax highlighting:
+
+```javascript
+function test() {
+ console.log("look ma’, no spaces");
+}
+```
+
+# Tables
+
+```
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+```
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+# Blockquotes
+
+```
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
+```
+
+> Blockquotes are very handy in email to emulate reply text.
+> This line is part of the same quote.
+
+

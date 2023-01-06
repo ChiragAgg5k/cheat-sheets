@@ -122,4 +122,52 @@ This command's life has been taken by many git history visualizers. Still the OG
 git log
 ```
 
+``` 
+git log --oneline --graph
+```
+
+### Git Diff
+
+This command shows the difference between the current state of the file and the last commit. It can be used to see the changes made in the file before committing them.
+
+```
+git diff
+```
+
+### Git Reset
+
+This command is used to revert to a previous commit. It can be used to revert to a previous commit, or to unstage a staged commit. It can also be used to revert to a previous commit and stage it.
+
+```
+git reset {commit_id}
+git reset HEAD
+git reset --soft {commit_id}
+```
+
+### Git Revert
+
+This command is used to revert to a previous commit.
+
+```
+git revert {commit_id}
+```
+
+### Git Merge
+
+This command is used to merge two branches. There can be two types of merges, fast-forward and three-way. Fast-forward is when the branch you are merging into is ahead of the branch you are merging. Three-way is when the branch you are merging into is behind the branch you are merging. The three-way merge is the default merge.
+
+```
+git merge {branch_name}
+```
+
+### Git Pull
+
+This command is used to pull changes from a remote repository. It is basically a combination of git fetch and git merge.
+
+```
+git pull
+```
+
+
+
 
